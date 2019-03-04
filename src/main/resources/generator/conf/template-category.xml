@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<categories>
+	<category>
+		<name>Service</name>
+	</category>
+	<category>
+		<name>ServiceImpl</name>
+		<path>service/impl</path> <!-- 默认值为CamelCase转lower/lower -->
+		<template>TemplateServiceImpl</template> <!-- 默认值为Template+name -->
+	</category>
+	<category>
+		<name>Repository</name>
+	</category>
+</categories>
