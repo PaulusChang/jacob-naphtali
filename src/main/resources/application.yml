@@ -32,16 +32,9 @@ sharding:
                 sharding-column: order_id
                 algorithm-expression: t_order$->{order_id % 2}
             actual-data-nodes: ds$->{0..1}.t_order$->{0..1}
-#          nap_role:
-#            table-strategy:
-#              inline:
-#                sharding-column: id
-#                algorithm-expression: nap_role
-#            actual-data-nodes: ds0.nap_role
         default-table-strategy: 
           none:
             any: 
-        
         default-database-strategy:
           inline:
             sharding-column: user_id
